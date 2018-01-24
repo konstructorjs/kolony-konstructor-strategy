@@ -1,6 +1,6 @@
 {
   "name": "@konstructor/kolony-strategy",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "kolony strategy",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "prepublish": "npm run compile",
     "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js src/."
+    "lint": "eslint *.js src/.",
+    "semantic-release": "semantic-release"
   },
   "author": "Manthan Mallikarjun",
   "license": "ISC",
@@ -21,10 +22,15 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "semantic-release": "^12.2.4"
   },
   "dependencies": {
     "ncp": "^2.0.0",
     "shelljs": "^0.7.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konstructorjs/kolony-strategy.git"
   }
 }
