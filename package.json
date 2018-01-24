@@ -1,7 +1,7 @@
 {
-  "name": "@konstructor/kolony-strategy",
-  "version": "0.0.0-development",
-  "description": "kolony strategy",
+  "name": "kolony-konstructor-strategy",
+  "version": "0.0.1",
+  "description": "konstructor strategy for kolony",
   "main": "index.js",
   "scripts": {
     "dev": "babel --out-dir lib/ --copy-files --watch src/",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "keywords": [
     "kolony",
+    "konstructor",
     "strategy"
   ],
   "devDependencies": {
@@ -31,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/konstructorjs/kolony-strategy.git"
+    "url": "https://github.com/konstructorjs/kolony-konstructor-strategy.git"
   }
 }
