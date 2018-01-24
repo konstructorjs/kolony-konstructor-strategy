@@ -1,0 +1,30 @@
+{
+  "name": "@konstructor/kolony-strategy",
+  "version": "0.0.1",
+  "description": "kolony strategy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel --out-dir lib/ --copy-files --watch src/",
+    "prepublish": "npm run compile",
+    "compile": "babel --out-dir lib/ --copy-files src/",
+    "test": "npm run lint",
+    "lint": "eslint *.js src/."
+  },
+  "author": "Manthan Mallikarjun",
+  "license": "ISC",
+  "keywords": [
+    "kolony",
+    "strategy"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "shelljs": "^0.7.8"
+  }
+}
