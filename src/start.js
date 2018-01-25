@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = async (ctx) => {
   const buildDir = process.cwd();
   const startPath = path.join(buildDir, './node_modules/konstructor/app.js');
-
+  const interpreter = (ctx.state.node) ? `node@${ctx.state.node}` : 'node';
   await ctx.start({
-    interpreter: `node@${ctx.state.node}`,
+    interpreter,
     script: startPath,
   });
   const appName = `${ctx.app.name}-${ctx.app.id}`;
