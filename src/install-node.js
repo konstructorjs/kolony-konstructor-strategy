@@ -12,6 +12,7 @@ module.exports = async (ctx) => {
   } else {
     await ctx.run('nvm use default');
     ctx.logChild('using default node version');
+    ctx.state.node = 'default';
   }
 
   ctx.logBase('looking for npm');
