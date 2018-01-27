@@ -8,8 +8,7 @@
     "prepublish": "npm run compile",
     "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js src/.",
-    "semantic-release": "semantic-release"
+    "lint": "eslint *.js src/."
   },
   "author": "Manthan Mallikarjun",
   "license": "ISC",
@@ -23,8 +22,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "semantic-release": "^12.2.4"
+    "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
     "ncp": "^2.0.0",
