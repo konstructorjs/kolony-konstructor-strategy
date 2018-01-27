@@ -1,6 +1,7 @@
 module.exports = async (ctx) => {
   ctx.logBase('looking for post-build script');
-  const command = ctx.state.packageJSON.kolony['post-build'];
+  const kolony = ctx.state.packageJSON.kolony || {};
+  const command = kolony['post-build'];
   if (command) {
     ctx.logBase(`running ${command}`);
     await ctx.run(`nvm exec --silent ${ctx.state.node} ${command} | sed 's/^/    /'`, { show: true });
