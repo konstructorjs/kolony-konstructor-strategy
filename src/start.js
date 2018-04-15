@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = async (ctx) => {
   const buildDir = process.cwd();
-  const startPath = path.join(buildDir, './node_modules/konstructor/app.js');
+  const startPath = path.join(buildDir, ctx.state.packageJSON.main || 'index.js');
   const interpreter = (ctx.state.node === 'default') ? 'node' : `node@${ctx.state.node}`;
   await ctx.start({
     interpreter,
