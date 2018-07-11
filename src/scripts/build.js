@@ -9,9 +9,7 @@ module.exports = async (ctx) => {
   } else if (command === '') {
     ctx.logChild('no build script defined');
   } else {
-    ctx.logChild('running npm run build');
-    await ctx.run(`nvm exec --silent ${ctx.state.node} npm run build | sed 's/^/    /'`, { show: true });
-    ctx.logChild('successfully ran build script');
+    ctx.logChild('no build script defined');
   }
 
   return ctx;
